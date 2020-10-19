@@ -1,6 +1,6 @@
-title: # a name for your Learning Lab course
-tagline: # a short description for your Learning Lab course, displayed on the course catalog
-description: # a longer description for your Learning Lab course, displayed on the course's landing page
+title: Why my CSS doesn't work?
+tagline: Understand how CSS properties are calculated and why some rules overlap and others don't. # a short description for your Learning Lab course, displayed on the course catalog
+description: Understand how CSS properties are calculated and why some rules overlap and others don't. # a longer description for your Learning Lab course, displayed on the course's landing page
 
 # Repository setup
 # The following section template information for the repository
@@ -23,38 +23,50 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-# Step 1: EDIT HERE - INTERNAL COMMENT DESCRIBING STEP 
-- title: # the title of the step, shown to the learner in the course progress page
-  description: # a description of the step, shown to the learner in the course progress page
+- title: Where's my css? In any HTML Tag.
+  description: You can put your CSS on a style tag, on a style attribute or on an external file, as a link. To start, add CSS to a HTML tag, using the attribute style in the span element.
   event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 2: EDIT HERE -INTERNAL COMMENT FOR STEP 2
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+ - title: Where's my css? Between Style's tag in the head
+   description: You can add css code between style tags (<style></style>). Add a style tag in the head, and create a css code to change the color of the span text to black.  
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 3: EDIT HERE - INTERNAL COMMENT FOR STEP 3
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+ - title: Where's my css? Between Style's tag in the body
+  description: You can also css tags on the body. In this example, we have two style tag, one at the beggin of the body, other at the end. Last change the same attribute on both, witch one will win? 
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+ - title: Who will win? Class VS Class
+description: 
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 5: EDIT HERE - INTERNAL COMMENT FOR STEP 5
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+ - title: ID vs Tag vs Class vs ID
+  description: # a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
+ - title: !important vs Class VS ID 
+ description: Is !important a way to cheat on CSS? When it makes sense to use?
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  actions: # a list of the actions that will occur when the step is triggered by an event
+#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+
+ - title: Where's my css? How priotity is calculated?
+  description: Inline, ID, Class, Element. Calculate the priority matriz for the examples. 
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  actions: # a list of the actions that will occur when the step is triggered by an event
+#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+
+ - title: What my CSS is targeting? How priotity is calculated?
+  description: Inline, ID, Class, Element. Calculate the priority matriz for the examples. 
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  actions: # a list of the actions that will occur when the step is triggered by an event
+#  - type: # the type of action, full list at https://lab.github.com/docs/actions
